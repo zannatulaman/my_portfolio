@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-html, body{
-    font-family: Arial, sans-serif;
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* height: 100%;
     width: 100%; */
     /* overflow-x: hidden; */
@@ -13,18 +14,30 @@ html, body{
  
 .intro{
     background: linear-gradient(to right,#a8edea,  #7C90B3);
+    /* min-height: 100vh; */
 }
 
 .logo{
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: bold;
-    color: #000;
-    /* padding: 15px;
-    margin: 15px; */
+    color:lightcoral;
+    padding-top: 2%;
+    margin-left: 4%;
+}
+
+.logo:hover{
+    color: purple;
+    transition: all 0.5s;
 }
 .red-heading{
-    color: purple;
+    color: rgb(15, 0, 128);
 }
+
+.red-heading:hover{
+    color: #7C90B3;
+    transition: all 0.5s;
+}
+
 
 .container{
     max-width: 1300px;
@@ -35,46 +48,38 @@ html, body{
     height: 100vh;
 
 }
-
-
-.grid{
+.intro-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    /* width: 80%; */
+    gap: 100px; 
     align-items:center ;
     justify-content: center;
-
-    
+}
+.intro-grid img{
+    width: 500px;
+    height: 500px;
+    /* margin: 50px 0px; */
+    border-radius: 50%;
 }
 
-.grid img {
-    width: 400px;
-    height: 400px;
-    margin: 50px 0px;
-}
-
-.avatar-img {
-    margin: 0 auto;
-    justify-content: center;
-    padding: 0px 50px;
-}
 .intro-text {
-    /* padding: 0px 30px;  */
-    color: whitesmoke;
+    color:whitesmoke;
+}
+h1 span{
+    color: rgba(0, 0, 255, 0.68);
 }
 
-.text{
-    font-size: 30px;
+.intro-text h5{
+    font-size: 2rem;
     font-weight: 200;
 }
 
 .intro-text span{
-   font-size: 2em;
+    font-size: 3rem;
 }
 
 .intro-text span:hover{
-    color:tomato;
+    color:lightcoral;
     transition: 0.2s ease-in-out;
 }
 
@@ -83,7 +88,7 @@ html, body{
     padding: 20px;
     margin: 20px 0px;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 1rem;
     
 }
 
@@ -96,45 +101,23 @@ html, body{
     background: linear-gradient(to right, #fbffef, #e4ebff);
 }
 
-.container2{
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 
-}
-
-
-.grid2{
+.about-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 50px;
+    gap: 30px;
+    /* column-gap: 50px; */
     align-items:center ;
-    /* justify-content: center;   */
-    /* padding-top: 30px;
-    padding-bottom: 30px; */
-
-    
 }
 
-.about-img{
-    margin: 0 auto;
-    justify-content: center;
-    padding: 0px 50px;
-} 
-
-.grid2 img {
-    width: 600px;
-    height: 600px;
+.about-grid img {
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
-    justify-content: center;
-
 }
 
 .about-text{
-    font-size:30px;
+    font-size:1.5rem;
     font-weight: 500;
     
 }
@@ -157,7 +140,7 @@ html, body{
 .skill-grid{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
-    align-self: center;
+    align-items: center;
     gap: 30px;
     column-gap: 200px; 
     padding-bottom: 20px;
@@ -204,7 +187,7 @@ html, body{
     border-radius: 8px;
     background-color: rgba(61, 51, 207, 0.769); 
     padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
 
 }
 
@@ -219,16 +202,11 @@ html, body{
     margin-top: 20px;
 }
 
-form{
-    margin-top: 20px;
-   
-}
-
 .input-field{
     width: calc(100% - 20px);
     margin-bottom: 15px;
     padding: 10px;
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 16px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -255,7 +233,6 @@ textarea {
     list-style: none;
     padding: 0;
     margin: 0;
-    /* font-size: 50px; */
     margin-top: 30px;
 }
 
@@ -278,60 +255,44 @@ textarea {
     color: #ff001e;
 }
 
-
-
 @media screen and (max-width:600px) {
     .logo{
         font-size: 40px;
     }
     .container{
         height: auto;
-    
     }
     .grid{
        grid-template-columns: 1fr;
-    
     }
     
     .grid img {
         width: 300px;
         height: 300px;
-        
     }
     
     .avatar-img {
         padding: 10px;
-        
     }
-   
 
-    .intro-text {
+   .intro-text {
         text-align: center;
     }
-    
     .text{
         font-size: 30px;
         
     }
-    
     .intro-text span{
        font-size: 35px;
     }
-
     .intro-text button{
         
         padding: 15px;
         font-size: 15px;
-        
     }
     
-    .container2{
-        height: auto;
-    
-    }
 
     .grid2{
-        
         grid-template-columns:1fr;
     }
     
@@ -364,7 +325,5 @@ textarea {
         grid-template-columns:1fr;
     
     }
-    
-    
-    
+
 }
