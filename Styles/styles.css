@@ -115,12 +115,12 @@ h1 span{
 }
 
 .about-text h1{
-    font-size:2rem;
+    font-size:2.5rem;
     font-weight: bold;
 }
 
 .about-text p{
-    font-size:1.5rem;
+    font-size:1.4rem;
     font-weight: 500;
 }
 .skill-container{
@@ -181,8 +181,7 @@ h1 span{
 .contact-section{
     background-color: #fbffef;
     padding: 50px 0;
-    text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .contact-container{
@@ -192,11 +191,11 @@ h1 span{
     border-radius: 8px;
     background-color: rgba(61, 51, 207, 0.769); 
     padding: 20px;
-
 }
 
 .contact-text h1{
     /* padding: 10px; */
+    text-align: center;
     font-size: 1.5rem;
     color:#fff;
     
@@ -227,10 +226,6 @@ textarea {
     background-color:lightcoral;
     border-radius: 8px;
     font-size: .5rem;
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    margin-left: 2%;
 }
 .contact-box button a{
       text-decoration: none;
@@ -239,6 +234,7 @@ textarea {
 }
 
 .icon-list{
+    text-align: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -256,8 +252,9 @@ textarea {
 }
 
 .icon-list ul li i{
-    font-size: 2rem;
-    margin-right: 5px;
+    font-size: 2.5rem;
+    /* margin-right: 5px; */
+    padding: 10px;
     transition: color 0.3s;
 }
 .icon-list ul li i:hover{
@@ -377,8 +374,8 @@ textarea {
     .about-grid img {
         width: 300px;
         height: 300px;
-        border-radius: 50%;
-        margin-left: 5%;
+        /* border-radius: 50%; */
+        margin-left: 10%;
     }
     
     .about-text{
