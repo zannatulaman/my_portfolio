@@ -336,7 +336,7 @@ textarea {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .container{
         /* max-width: 300px; */
         height: auto;
@@ -374,8 +374,7 @@ textarea {
     .about-grid img {
         width: 300px;
         height: 300px;
-        /* border-radius: 50%; */
-        margin-left: 10%;
+        margin: 0 auto;
     }
     
     .about-text{
@@ -396,7 +395,7 @@ textarea {
     }
 }
 
-@media screen and (max-width:425px) {
+/* @media screen and (max-width:425px) {
     .container{
         max-width: 300px;
         height: auto;
@@ -443,7 +442,6 @@ textarea {
     
     .about-text p{
         font-size:1.3rem;
-        /* font-weight: 500; */
     }
     .skill-container{
         max-width: 300px;
@@ -455,4 +453,4 @@ textarea {
     .contact-container{
         max-width: 300px;
     }
-}
+} */
